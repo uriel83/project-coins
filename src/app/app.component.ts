@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { title } from 'process';
+import { currencys } from './models/currency.models';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'new-objekt';
 }

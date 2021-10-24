@@ -1,0 +1,23 @@
+<app-home></app-home>
+
+<div class="row ">
+    <div class="col-md-3"  *ngFor ='let i of currency'>
+           <app-comp1 [i]="i"></app-comp1>
+  </div> 
+</div>
+
+ <!-- <div class="card" style="width: 24rem;">
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="{{i.id}}">
+            <label class="custom-control-label" for="{{i.id}}"></label>
+       </div>
+     <div class="card-body">
+          <h5 class="card-title">{{i.name}}</h5>
+          <h5 class="card-title">{{i.symbol}}</h5>
+          
+          <button class="btn btn-primary">More info</button>
+          <h5 class="card-title">{{i.market_data.current_price.usd | currency:'USD'}}</h5>
+          <h5 class="card-title">{{i.market_data.current_price.eur | currency:'EUR'}}</h5>
+          <h5 class="card-title">{{i.market_data.current_price.ils | currency:'ILS'}}</h5>
+      </div>
+    </div> -->

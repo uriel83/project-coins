@@ -1,0 +1,21 @@
+<div class="card" style="width: 24rem;">
+    <div class="custom-control custom-switch text-right mergin">
+        <input type="checkbox" class="custom-control-input"  id="{{i.id}}">
+        <label class="custom-control-label" for="{{i.id}}"></label>
+   </div>
+ <div class="card-body">
+      <h5 class="card-title">{{i.name}}</h5>
+      <h5 class="card-title">{{i.symbol}}</h5>
+     
+      <button class="btn btn-primary" (click)="indexGet(i.id)">More info</button>
+     
+      
+<div *ngIf ='userclick'>
+  <img src="{{coinindex.img}}" >
+
+      <h5 class="card-title">{{coinindex.usd | currency:'USD'}}</h5>
+      <h5 class="card-title">{{coinindex.ewr | currency:'EUR'}}</h5>
+      <h5 class="card-title">{{coinindex.ils | currency:'ILS'}}</h5>
+
+  </div>
+</div>
